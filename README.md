@@ -86,7 +86,21 @@ group by id
 order by sum_calories desc
 LIMIT 1000
 ```
-i also queried to get te hour with the highest calories burned.
+Below is the most active time of the most active user. 
+```SQL
+SELECT 
+id, 
+round(avg(calories)) as avg_calories, 
+activity_hour 
+FROM `adesanmi-bq-project.bellabeat_fitbit.hourly_calories` 
+where id = 8378563200 
+group by id, 
+activity_hour 
+order by avg_calories desc
+LIMIT 1000
+```
+I also queried to get the hour with the highest calories burned, distance covered, and total steps.
+I wanted to get some data which could be used when planning a marketing strategy for running commercials
 ```SQL
 SELECT 
 activity_hour,
@@ -95,7 +109,22 @@ FROM `adesanmi-bq-project.bellabeat_fitbit.hourly_calories`
 group by activity_hour
 order by avg_cal desc
 ```
-I wanted to get some data which could be used when planning a marketing strategy for running commercials
+```SQL
+SELECT 
+activity_hour2,
+round(avg(total_intensity)) as avg_int
+FROM `adesanmi-bq-project.bellabeat_fitbit.hourly_intensities`
+group by activity_hour2
+order by avg_int desc
+```
+```SQL
+SELECT 
+activity_hour,
+round(avg(step_total)) as avg_steps
+FROM `adesanmi-bq-project.bellabeat_fitbit.hourly_steps`
+group by activity_hour
+order by avg_steps desc
+```
 
 ## VISUALIZATION
 1.	a chart showing the trendline for calories and steps for each user over the last one month.
@@ -106,6 +135,12 @@ I wanted to get some data which could be used when planning a marketing strategy
 6.	A trend of calories burned per hour, over the month.
    
 ## KEY FINDINGS
-1.	The steps, distance covered, and calories burned are all positively related.
-2.	There was a decline in the average amount of calories burned throughout the time frame of data collection.
-3.	The high   correlation of these analysis could mean that the users are dependent on physical exercise to burn calories. 
+1.	The steps, distance covered, and calories burned are all positively proportional to each other.
+2.	The high correlation of these analysis could mean that a considerablenumber of users are dependent on physical exercise to burn calories.
+3.	There was a decline in the average amount of calories burned throughout the time frame of data collection. 
+4.	Users are most active during the evening at around 5-7 pm. This knowledge could be used in choosing the right activity to be done for marketing commercial.
+
+## RECOMMENDATION
+1. The most active_hour finding could be used when planning a marketing strategy for running commercials. study show that targetting marketng campaign on specific activities that are most caried out by users are more likely to cause more engagement. the most prevailent activities that are most carried out at 5-7pm are: walking back from work, gym, evening walk etc.
+2. 
+	 
