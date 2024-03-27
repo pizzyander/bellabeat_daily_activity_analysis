@@ -1,6 +1,18 @@
 # Bellabeat_daily_activity_analysis
 This analysis is focused on exploring Fitbit Fitness Tracker data to draw insights for business growth opportunities.
 
+## TABLE OF CONTENT
+[DELIVERABLES](#deliverables)  
+[QUESTIONS TO ANSWER](#questions-to-answer)  
+[DATA SOURCE](#data-source)  
+[TOOLS](#tools)  
+[DATA CLEANING/ PREPARATION](#data-cleaning-preparation)  
+[EXPLORATORY DATA ANALYSIS](#exploratory-data-analysis)  
+[DATA ANALYSIS](#data-analysis)  
+[VISUALIZATION](#visualization)  
+[KEY FINDINGS](#key-findings)  
+[RECOMMENDATION](recommendation)  
+[LIMITATIONS](limitations)  
 ### DELIVERABLES
 1.	A clear summary of the business task 
 2.	A description of all data sources used. 
@@ -134,7 +146,7 @@ order by avg_steps desc
 5.	Plots on R
 6.	A trend of calories burned per hour, over the month.
    
-## KEY FINDINGS
+## KEY FINDINGS 
 1.	The steps, distance covered, and calories burned are all positively proportional to each other.
 2.	The high correlation of these analysis could mean that a considerablenumber of users are dependent on physical exercise to burn calories.
 3.	There was a decline in the average amount of calories burned throughout the time frame of data collection. 
@@ -143,4 +155,7 @@ order by avg_steps desc
 ## RECOMMENDATION
 1. The most active_hour finding could be used when planning a marketing strategy for running commercials. study show that targetting marketng campaign on specific activities that are most caried out by users are more likely to cause more engagement. the most prevailent activities that are most carried out at 5-7pm are: walking back from work, gym, evening walk etc.
 2. 
-	 
+
+## LIMITATIONS
+- available data does not span over wide range of time so it is difficult to identify trends.
+- 
