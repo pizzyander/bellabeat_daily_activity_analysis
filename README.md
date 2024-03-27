@@ -70,6 +70,10 @@ group by activity_date
 order by activity_date
 LIMIT 1000
 ```
+![avg_dis](https://github.com/pizzyander/bellabeat_daily_activity_analysis/assets/141561016/a734cf4c-d868-4c0c-a387-2afc8599015a)
+![avg_step](https://github.com/pizzyander/bellabeat_daily_activity_analysis/assets/141561016/5971bd22-835e-4014-8548-2d1b223fb0e2)
+![avg_cal](https://github.com/pizzyander/bellabeat_daily_activity_analysis/assets/141561016/0f30c74d-7bfa-4288-ad73-0787e6730944)
+
 ```SQL
 #this code is to find the sum of the fields
 SELECT 
@@ -148,9 +152,12 @@ order by avg_steps desc
    
 ## KEY FINDINGS 
 1.	The steps, distance covered, and calories burned are all positively proportional to each other.
-2.	The high correlation of these analysis could mean that a considerablenumber of users are dependent on physical exercise to burn calories.
-3.	There was a decline in the average amount of calories burned throughout the time frame of data collection. 
-4.	Users are most active during the evening at around 5-7 pm. This knowledge could be used in choosing the right activity to be done for marketing commercial.
+![Bellabeat Data](https://github.com/pizzyander/bellabeat_daily_activity_analysis/assets/141561016/48e6003f-9f36-4426-a162-a39437a78db4)  
+3.	The high correlation of these analysis could mean that a considerablenumber of users are dependent on physical exercise to burn calories.
+4.	There was a decline in the average amount of calories burned throughout the time frame of data collection. 
+5.	Users are most active during the evening at around 5-7 pm. This knowledge could be used in choosing the right activity to be done for marketing commercial.
+![Sheet 1](https://github.com/pizzyander/bellabeat_daily_activity_analysis/assets/141561016/16c07b21-db02-4f3f-9868-e13b35cb557a)
+   
 
 ## RECOMMENDATION
 1. The most active_hour finding could be used when planning a marketing strategy for running commercials. study show that targetting marketng campaign on specific activities that are most caried out by users are more likely to cause more engagement. the most prevailent activities that are most carried out at 5-7pm are: walking back from work, gym, evening walk etc.
