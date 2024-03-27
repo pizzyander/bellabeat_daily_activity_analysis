@@ -157,5 +157,5 @@ order by avg_steps desc
 2. 
 
 ## LIMITATIONS
-- available data does not span over wide range of time so it is difficult to identify trends.
+- available data does not span over wide span of time so it is difficult to identify trends.
 - 
