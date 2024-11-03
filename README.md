@@ -33,7 +33,7 @@ This analysis is focused on exploring Fitbit Fitness Tracker data to draw insigh
 
 ### TOOLS
 - Excel: Data cleaning  
-- SQL: analysis  
+- SQL: analysis, and database managemnt 
 - Tableau: creating dashboard
 
 ### DATA CLEANING/ PREPARATION
